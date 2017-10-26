@@ -19,6 +19,9 @@ public abstract class Shape {
   public abstract double calcArea();
   public abstract double calcPerimeter();
   public abstract String getType();
+  public void finalize() {
+    shapeCount--;
+  }
   public String getName() {
     return name;
   }
